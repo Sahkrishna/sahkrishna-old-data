@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>This the second heading type</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio doloribus iure impedit atque cupiditate expedita quis voluptates consequatur autem accusamus, corporis ipsa tempore unde delectus.</p>
+    <button>click me</button>
+    <script>
+
+        //alert dialog box
+        //prompt: to take input from the user
+        //confirm: it will give you choice yes or no
+
+        // // window.alert("THis is the first javascript page with html")
+        // alert("Welcome to my web software");
+
+        //Taking imput in dialog box using prompt method
+        // let username=prompt("Enter your name");
+        // alert(username);
+
+        //Confirm
+        let choice=confirm("Do you want to go to the google.com");
+
+        if(choice){
+            location.href="https://www.google.com";
+        }
+        else{
+            alert("not navigating to the google");
+        }
+
+        /*console object
+
+        log, info, warn, error, table, time, clear
+
+        */
+
+        console.log("hey this is log funtion");
+        console.warn("hey this is  warning");
+        console.error("hey this is  error");
+        console.info("hey this is info funtion");
+
+
+        //after 3 milesecond console will be automatically clear
+
+        // setTimeout(function(){
+
+        //     console.log("clearing...")
+        //     console.clear();
+
+        // },3000);
+
+        let student={
+            name:"krishna",
+            address:"kamalput",
+            phone:"9814754214"
+        }
+        console.log(student);
+        console.table(student);
+
+        setTimeout(function(){
+            console.log("clearing...")
+            console.clear();
+        },3000)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation</title>
+</head>
+<body>
+    <div id="container">
+
+        <h2 id="title">DOM Navigation</h2>
+
+        <button onclick="addNodes()">Add node</button>
+
+        <p id="content">
+            <span>This is a paragraph with some text inside.</span>
+        </p>
+
+        <button onclick="addNavigation()">Click</button>
+
+        <h2>Javascript is one of the most popular programming language for frontend as well as backend.</h2>
+    </div>
+
+
+
+    <script>
+
+        const addNodes=()=>{
+            let divNode=document.createElement("heading");
+
+            //creating text node 
+            let textNode=document.createTextNode("Hey How are you?")
+            divNode.appendChild(textNode);
+
+            //creating container object
+            let containerObj=document.getElementById("container");
+
+            //creating the title node object
+            let titleObj=document.getElementById("title");
+
+            //creating the content node object
+            let contentObj=document.getElementById("content");
+
+            //creating next sibling object and print it
+            let nextSibling=contentObj.nextElementSibling;
+            console.log(nextSibling);
+            //printing the privious siblings
+            console.log(contentObj.previousElementSibling);
+
+
+            //adding the div node into the container node
+            containerObj.insertBefore(divNode,titleObj);
+
+
+        }
+
+
+        const addNavigation=()=>{
+
+            let titleObj=document.getElementById("content");
+            titleObj.style.color="red";
+            titleObj.style.background="black"
+            
+        //creating the container object
+        let contanerObj=document.getElementById("container");
+        // console.log(contanerObj);
+        //creating the first child of the container element
+        let firstchild=contanerObj.firstElementChild;
+        // console.log(firstchild.nodeName);
+        firstchild.innerHTML="Hello world!!";
+
+        //creaating the last child of the contianer element
+        let lastChild=contanerObj.lastElementChild;
+        // console.log(lastChild.nodeName);
+        
+        console.log(lastChild.innerHTML);
+
+        //styling the last child property
+        lastChild.style.color="white";
+        lastChild.style.background="skyblue";
+
+        //creating the next sibling: means javascript tag code
+        let nextSibling=contanerObj.nextElementSibling;
+        // console.log(nextSibling)
+
+        //creating the parent node
+        let parentObj=contanerObj.parentNode;
+        // console.log(parentObj)
+
+        //creating the all child nodes
+        let nodes= contanerObj.children;
+
+        for(let n of nodes){
+            console.log(n.nodeName);
+        }
+
+        
+
+        }
+
+
+
+    </script>
+</body>
+</html>

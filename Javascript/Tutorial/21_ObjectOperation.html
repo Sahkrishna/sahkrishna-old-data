@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object operation</title>
+</head>
+<body>
+
+    <h2>Object operation</h2>
+
+
+    <script>
+
+        let obj={
+            name:"krishna",
+            address:"kathmandu",
+            phone:"987654567",
+            lastName:"sah",
+            display: function(){
+                console.log(this.name);
+                console.log(this.address);
+                console.log(this.phone);
+                console.log(this.lastName);
+            }
+        }
+
+        // console.log(obj);
+        // for(let x in obj){
+        //     console.log(`${x}: ${obj[x]}`);
+        //     // console.log(obj.name);
+        // }
+
+        //printing the function value
+        obj.display();
+
+        //Adding the value
+        obj.name="Balram";
+        
+        //adding new property
+        obj.age=20;
+        console.log(obj)
+
+        delete obj['lastName'];//deleting a particular key from object
+        console.log(obj)
+
+    
+        obj.lastName="Sardar";
+        for(let key in obj){
+            console.log(`${key}: ${obj[key]}`);
+        }
+        console.log(obj);
+
+    </script>
+    
+</body>
+</html>

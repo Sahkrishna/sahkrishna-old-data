@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Timer</title>
+</head>
+<body>
+
+    <h1>Javascript Timers</h1>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">stop</button>
+
+
+
+    <script>
+
+
+//setTimeout(): execute code after a delay
+//setInterval(): execute code at regular interval
+
+
+
+
+
+//First write a block of code
+const myCode=()=>{
+    
+    console.log("This is my code");
+    console.log("How are your?");
+}
+
+const start=()=>{
+    // myCode();
+
+    // setTimeout(myCode,2000);  //execute the function after 2 seconds
+
+    setInterval(myCode,2000);  //execute the function after 2 seconds and then every 2 seconds
+}
+function stop(){
+    clearInterval(myCode);   //stops the execution of setInterval
+}
+
+    </script>
+    
+</body>
+</html>

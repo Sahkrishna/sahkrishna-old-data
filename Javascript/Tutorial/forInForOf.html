@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in and for of loop</title>
+</head>
+<body>
+
+    <h2>This is the for in and for of loop tutorial</h2>
+
+
+    <script>
+
+        let st1={
+            name:"Ravi",
+            age:35,
+            city:"Hyderabad",
+            phone:"9876543210"
+        };
+
+        //for in
+        //It will print the properties of object: both key and value
+        // for(let x in st1){
+            
+        //     console.log(`${x}: ${st1[x]}`); // this will print all the properties and value of object 
+        // }
+
+        //for of
+        //it will print the value
+        let arr=["krishna","balram","rajesh"];
+        for(let item of arr){
+            console.log(item);
+        }
+
+        //It will print the index value i.e 0,1,2
+        for(let x in arr){
+            console.log(x);
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+To upload image: 
+		
+public String uploadImage(String path,MultiPartFile file)
+	{
+		//File name
+		String name=file.getOriginalName();
+		
+		//full path 
+		String filePath=path+ File.separator+name;
+
+
+		//create folder if not created
+		File f=new File(path);
+		if(!f.exists()){
+		f.mkdir();
+		
+		}
+
+
+		//File copy
+		Files.copy(file.getInputStream().paths.get(filePath));
+		
+		return name;

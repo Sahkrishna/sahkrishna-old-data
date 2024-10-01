@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+    <h2 id="title">THis is the DOM manupulation tutorial</h2>
+    <button onclick="addNode()">Add node</button>
+
+    <!-- //adding div element -->
+</div>
+
+
+    <script>
+
+        const addNode=()=>{
+            // console.log("adding node");
+
+            //creating node element
+            let divElement=document.createElement("div");
+            // console.log(divElement)
+
+            //adding text
+            //create a textnode
+            let textElement=document.createTextNode("Wow this is magic !!");
+            let textElement1=document.createTextNode("Hey this is very helpful tutorial");
+                //adding text element into the div tag
+            divElement.appendChild(textElement);
+            divElement.appendChild(textElement1);
+
+            //adding the div tag into the main tag
+            let divElements=document.getElementById("main");
+            divElements.appendChild(divElement);
+
+            let titleElement=document.getElementById("title");
+
+            //adding the div tag into the main tag befor the title
+            // divElements.insertBefore(divElement,titleElement);
+
+            // console.log(divElement);
+
+            //changing the inner html text
+            // titleElement.innerHTML="Hey there?";
+
+            divElements.removeChild(titleElement);
+
+
+        }
+
+    </script>
+
+</body>
+</html>

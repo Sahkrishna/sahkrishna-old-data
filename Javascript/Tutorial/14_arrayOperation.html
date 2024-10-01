@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very useful array operation</title>
+</head>
+<body>
+<!-- 
+    /*
+    To print the value using forEach Function
+    name.forEach(function(item, index){
+        console.log(index, " -> ",item)
+    })
+        To add value into the last position: name.push()
+        To remove the last value: name.pop()
+        To remove the value from beginning: name.shift()
+        To add the value in beginnign: name.unShift()
+        To find the index number: name.indexOf("value")
+        To remove the any position value: name.splice(1,1);
+        To copy an array: name.slice();
+    */ -->
+    <h2>Very useful array operation</h2>
+
+    <script>
+
+        let arr=["krishna","Balram","Rajesh",20,40,60];
+        //To add the value at last
+        arr.push("jamuna");
+        // console.log(arr);
+
+        //printing the value using loop
+        arr.forEach(function(item,index){
+            console.log(index," -> ",item)
+        })
+        console.log(arr);
+
+        //To remove the beggining value
+        arr.shift();
+        console.log(arr); 
+
+        //To add value in the beginning
+        arr.unshift("james");
+        console.log(arr);
+
+        //To remove any postion value
+        arr.splice(1,3);
+        console.log(arr);
+
+        let arr2=arr.slice();
+        console.log(arr2);
+        arr2.push("jamesh bond");
+        console.log(arr2);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five string operation</title>
+</head>
+<body>
+    <h2>Five String operation</h2>
+
+
+    <script>
+
+        //literal string
+        let username="krishna";
+        let lastname="krishna";
+
+        console.log(username===lastname);
+
+        //object string
+        let message=new String("krishna");
+        let message1= new String("krishna");
+        message2=message;
+        console.log(message==message2);
+        console.log(message);
+
+        //comparing two string
+        let x="A";
+        let y="B";
+
+        //to comapare string we should use the localComapare method
+        //exact matching: 0
+        //x>y: +1
+        //x<t: -1
+        let xa=x.localeCompare(y);
+        console.log(xa);
+
+        //to check the value of string
+        //we can use chatCodeAt(index)
+
+        console.log(x.charCodeAt(0));
+
+        //Replacing certain string with another
+        let oldString="I love javascript";
+        let newString=oldString.replace("love","hate");
+        console.log(newString);
+
+        //4.Accessing the character -string[0]
+        //Difference in charAt and directly index value:
+        //In charAt Function if the character is not found the it will return blank value
+        //In directly index value: it will give undefined value
+        console.log(oldString.charAt(0));
+        console.log(oldString[5]);
+
+
+        //converting the string value to array
+        let convertedValue=oldString.split(" ")
+        console.log(convertedValue);
+
+    </script>
+</body>
+</html>

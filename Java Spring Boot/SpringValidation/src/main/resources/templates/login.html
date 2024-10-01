@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Login page</title>
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="row mt-5 mb-5">
+				<div class="col-md-6 offset-md-3">
+
+					<form th:action="@{/process}" method="post" th:object="${loginData}">
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">UserName</label>
+							<input type="text" th:classappend="${#fields.hasErrors('userName')}?'is-invalid':' '" class="form-control" name="userName" th:value="${loginData.userName}"
+								id="exampleInputEmail1" aria-describedby="emailHelp">
+
+							<div th:each="e:${#fields.errors('userName')}" th:text="${e}" class="invalid-feedback">
+								
+							</div>
+
+						</div>
+						
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Password</label>
+							<input type="password" th:classappend="${#fields.hasErrors('password')?'is-invalid':' '}" name="password" th:value="${loginData.password}" class="form-control"
+								id="exampleInputPassword1">
+								
+								<div th:each="e:${#fields.errors('password')}" th:text="${e}" class="invalid-feedback"></div>
+						</div>
+						
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Email</label>
+							<input type="email" name="email" th:value="${loginData.email}" class="form-control"
+								id="exampleInputPassword1">
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" name="agreed" th:classappend="${#fields.hasErrors('agreed')?'is-invalid':' '}" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Agree terms and condition </label>
+							
+							<div th:each="e:${#fields.errors('agreed')}" th:text="${e}" class="invalid-feedback"></div>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

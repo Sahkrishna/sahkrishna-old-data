@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type understanding</title>
+</head>
+<body>
+
+    <h2>Working fine!!</h2>
+
+
+    <script>
+
+        /*
+        There are two type of datatype: primitive data type and Reference datatype
+         Inside primitive datatype:int, float, string,boolean,null,undefined
+         Inside reference data type: array,object,data,set, map....
+
+         In primitive datatype: memory allocated in stack memory
+         In Reference datatype: memory allocated in heap memory: all data type are in object format
+
+        */
+
+        //integer
+        let a=10;
+        console.log(typeof a);
+
+        //float: it will also return number type because float is also a number
+        let b=234.654;
+        console.log(typeof b);
+
+        //string
+        let message="hey my name is krishn";
+        console.log(typeof message);
+
+        //boolean
+        let isActive=true;
+        console.log(typeof isActive);
+
+        //undefined
+        let jamp;
+        console.log(typeof jamp);
+
+        //null: it will return the object type datatype
+        let value=null;
+        console.log(typeof value);
+
+
+
+        //Reference data type
+        //array
+         let student=["krishna","balram","Ramesh"];
+         console.log(typeof student);
+
+         //date
+         let date=new Date();
+         console.log(date);
+         console.log(typeof date);
+
+         let x=[12];
+         let y=[12];
+
+         //It will give false value because while creating array it will matched address of memory allocation
+         //while creating memory x address is 10002 for eg
+         //Again creating x variable..its address is differ from x
+        console.log(x==y);
+
+    </script>
+    
+</body>
+</html>

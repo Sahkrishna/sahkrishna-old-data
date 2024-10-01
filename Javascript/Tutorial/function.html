@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function declaring</title>
+</head>
+<body>
+    <h2>Hey this is the function tutorial</h2>
+    <h3>Hello world!!</h3>
+
+
+
+    <script>
+
+
+        function display(){
+            console.log("hello world!!");
+            console.log("How are you?")
+            console.log("what are you doing")
+        }
+
+        console.log("first line")
+        console.log("second line")
+        display();
+
+        //Parameter function
+        function doSum(a,b){
+            let c=a+b;
+            return c;
+        }
+       console.log(doSum(23,45));
+
+
+       //Arrow function
+
+       const toCelsius=(fahrenheit)=>{
+           let celsius= (5/9)*(fahrenheit-32);
+           return celsius;
+       };
+       let convertedCelsius=toCelsius(102);
+       console.log("Celsius is: ",convertedCelsius);
+
+       const simpleInterest=(principal,time,rate)=>{
+           let interest= (principal*time*rate)/100;
+           return interest;
+       };
+
+       let interest=simpleInterest(1000,2,5);
+       console.log("Simple interest is: ",interest);
+
+    </script>
+    
+</body>
+</html>

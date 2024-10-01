@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom selector</title>
+</head>
+<body>
+    <h2>Dom selector</h2>
+    <h1 id="banner">Hello world!!</h1>
+
+    <h3 class="myclass">This is the heading 3</h3>
+    <h3 class="myclass">This is the heading 3</h3>
+    <h3 class="myclass">This is the heading 3</h3>
+
+
+    <script>
+
+
+        //getting entire page i.e, document or html or xml page
+        let ht=document.documentElement;
+        // console.log(ht);
+
+        //getting head and body
+        let hd=document.head;
+        let bo=document.body;
+
+        //printing in console head selector and body selector
+        // console.log(hd);
+        // console.log(bo);
+
+        //gettting html from id and updating it
+       let h1= document.getElementById("banner");
+    //    console.log(h1);
+
+       //getting the element by class
+       let btn=document.getElementsByClassName("btn1");
+    //    console.log(btn);
+       //updating the inner html
+    //    btn.innerHTML="Submit";
+    //    console.log(btn);
+
+      // h1.innerHTML = "Welcome to my site";
+      //updating the html using javascript: Dynamically
+      h1.innerHTML="change text";
+
+      //updating the style
+      h1.style.color="white";
+      h1.style.background="blue";
+
+
+
+      //updating the class
+      let cl=document.getElementsByClassName("myclass");
+      console.log(typeof cl);
+
+    //   for(let element of cl){
+    //     console.log(element);
+    //     element.style.color="white";
+    //     element.style.background="red";
+    //   }
+
+      //selecting the element with the help of css selector
+      //querySelector-  single element: first element
+      //querySelectorAll- multiple elements: list of elements
+
+      let el=document.querySelector(".myclass");
+      console.log(el);
+
+      let el2=document.querySelectorAll(".myclass");
+      
+      for(let elmt of el2){
+        console.log(elmt);
+        elmt.style.color="white";
+        elmt.style.background="darkblue";
+      }
+
+
+    </script>
+</body>
+</html>

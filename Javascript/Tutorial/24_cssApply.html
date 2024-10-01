@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applying css with the help of javascript </title>
+</head>
+<body>
+
+    <button onclick="getClick()">click me</button>
+    <button onclick="getStyle()">Get information</button>
+
+    <h2 id="main">code with krishna</h2>
+    <h2 id="sub">Facebook channel</h2>
+    <h2 id ="subsub">Programming videos</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis vitae fugit laboriosam. Ipsum numquam omnis mollitia, dolor laudantium impedit voluptatibus, minima, delectus repellendus aliquam reiciendis nostrum suscipit quia praesentium autem aliquid officiis cupiditate id aspernatur ex iste inventore. Odit animi sint iure voluptate eaque unde doloremque ipsam quam a.</p>
+
+    
+
+   <script>
+
+
+    //when click on the button it will call a function 
+    function getClick(){
+        main.style.color="white";
+        main.style.backgroundColor="black"; 
+        main.style.border="1px solid red";
+        main.style.padding="10px";
+    }
+
+    let main=document.getElementById("main");
+
+    const getStyle=()=>{
+        console.log(main.style.color);
+        console.log(main.style.backgroundColor);
+        console.log(main.style.border);
+        console.log(main.style.padding);
+    }
+
+    //getting the initial value
+    let styles=window.getComputedStyle(main);
+    console.log(styles.getPropertyValue("color"));
+
+   
+   </script>
+</body>
+</html>

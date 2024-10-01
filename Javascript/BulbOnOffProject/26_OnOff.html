@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb on off project</title>
+
+    <style>
+        .bulb-container{
+            margin: 30px;
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Here is bulb on off project</h2>
+    <!-- <button onclick="onBtn()" >Turn On</button>
+    <button onclick="offBtn()" >Turn Off</button>
+    <button onclick="toggleBtn()" id="onOffButton">On</button> -->
+
+    <div class="bulb-container">
+        <img src="off.png" onclick="toggleBtn()"  alt="Off Bulb" id="offImg"/>
+    </div>
+
+    <script>
+        const onBtn=()=>{
+            let onObj=document.getElementById("offImg");
+            // console.log(onObj.getAttribute("src"));
+            onObj.setAttribute("src","on.png");
+            //console.log(onObj);
+            // console.log(onObj.getAttribute("src"));
+        }
+        const offBtn=()=>{
+            let onObj=document.getElementById("offImg");
+            // console.log(onObj.getAttribute("src"));
+            onObj.setAttribute("src","off.png");
+            //console.log(onObj);
+            // console.log(onObj.getAttribute("src"));
+        }
+
+        let buttonOb=document.getElementById("onOffButton");
+        
+
+
+        const toggleBtn=()=>{
+            
+            let onObj=document.getElementById("offImg");
+           let imgAtt= onObj.getAttribute("src");
+           if(imgAtt=="off.png"){
+            onBtn();
+            buttonOb.innerHTML="Off";
+            
+           }
+           else{
+            offBtn();
+            buttonOb.innerHTML="On";
+           }
+        }
+    </script>
+    
+</body>
+</html>

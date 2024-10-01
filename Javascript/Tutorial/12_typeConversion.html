@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type conversion in javascript</title>
+</head>
+<body>
+    <h2>Type conversion</h2>
+
+    <script>
+
+        //converting integer value to string
+        let num=100;
+        let s=String(num);
+        console.log(typeof s)
+        console.log(s.length);
+        //converting the string value to integer
+        let s2="100";
+        console.log(typeof s2);
+        let num2=Number(s2);
+        console.log(num2);
+
+        //conveting the boolena value to string
+        let isActive=false;
+        let s3=String(isActive);
+        console.log(typeof isActive);
+        console.log(typeof s3);
+        console.log()
+
+        //Arithmetic operation in string
+        let s5="1234";
+        console.log(s5+5)
+        //converting the string value to number
+        let n1=Number(s5);
+        console.log(n1+5);
+
+        //If we print the undefined value: it will be NaN: Not a Number
+        //null: 0
+        //true: 1
+        //false: 0
+
+        //conveting string to boolean
+        let exb="false";
+        console.log(typeof exb);
+        let bol=Boolean(exb);
+        console.log(typeof bol);
+        
+
+    </script>
+    
+</body>
+</html>
