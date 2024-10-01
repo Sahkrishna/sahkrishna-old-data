@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Reverse.java&apos; to &apos;ReverseArray/src/com.reverse.array&apos;&#x0D;&#x0A;- Original project: &apos;ReverseArray&apos;&#x0D;&#x0A;- Destination element: &apos;ReverseArray/src/com.reverse.array&apos;&#x0D;&#x0A;- Original element: &apos;Reverse.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.reverse.array" element1="/src&lt;{Reverse.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1718897159851" units="1" version="1.0"/>
+</session>

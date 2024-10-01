@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Header page</title>
+</head>
+<body>
+	
+	<header id="header_fragment" th:fragment="header1(name,age)">
+		
+		<h1 th:text="'Student name is '+${name}+' and age is: '+${age} "></h1>
+		<h2>This is the header page</h2>
+		<h3>Learn coding with krishna</h3>
+		
+	</header>
+	
+</body>
+</html>

@@ -1,0 +1,16 @@
+.fruit-item{
+  background-color:aqua ;
+}
+.food-item{
+  font-weight: bold;
+  color: red;
+}
+
+
+.foods{
+  background-color: red;
+}
+.game-item{
+  color: khaki;
+  font-weight: bolder;
+}

@@ -1,0 +1,10 @@
+.todoContainer{
+  text-align:  center;
+  background-color: grey;
+  
+  border: 1px solid rgb(27, 26, 26);
+  border-radius: 5px;
+  margin: 10px;
+  color: rgb(30, 18, 18);
+
+}

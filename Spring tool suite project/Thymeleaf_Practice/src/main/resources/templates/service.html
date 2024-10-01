@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Serrvice page</title>
+</head>
+<body>
+	<section>
+	<header id="host_tag" th:include="header::header1(${name},${age})">
+		
+	</header>
+	
+	<h2>This is the service page</h2>
+	<hr>
+	
+	<footer id="Host_tag" th:include="footer::footer1(${title},${subtitle})">
+		
+	</footer>
+	</section>
+</body>
+</html>

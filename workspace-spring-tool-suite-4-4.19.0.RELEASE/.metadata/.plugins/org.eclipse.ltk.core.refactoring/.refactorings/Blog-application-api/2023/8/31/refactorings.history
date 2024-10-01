@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.codewithkrishna.blog.config.CustomUserDetail.java&apos; to &apos;CustomUserDetailService.java&apos;&#x0D;&#x0A;- Original project: &apos;Blog-application-api&apos;&#x0D;&#x0A;- Original element: &apos;com.codewithkrishna.blog.config.CustomUserDetail.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.codewithkrishna.blog.config.CustomUserDetailService.java&apos;" description="Rename compilation unit &apos;CustomUserDetail.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.codewithkrishna.blog.config{CustomUserDetail.java" name="CustomUserDetailService.java" references="false" stamp="1690881985095" version="1.0"/>
+</session>

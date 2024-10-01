@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>About page</title>
+</head>
+<body>
+	<section>
+	<h2>This is the about page</h2>
+	<h3 th:text="'Current date is'+${current_date}"></h3>
+	
+	
+	<ul>
+		<li th:each="author,status:${author_name}">
+			<span th:style="${status.odd}?'color:red':' '" th:text="${status.index+1}+' '+${author}"></span>
+		</li>
+	</ul>
+	
+	<h1><span th:style="${isActive}?'color:green':'color:red'" z th:text="${isActive}?'Active':'DeActive'"></span></h1>
+	
+	<h2 th:if="${gender}=='F'">Female</h2>
+	<h2 th:unless="${gender}=='F'">Male</h2>
+	
+	
+	
+	<div th:switch="${#lists.size(number)}">
+		<h2 th:case="'1'">List contain 1 element</h2>
+		<h2 th:case="'2'">List contains 2 elements</h2>
+		<h2 th:case="'3'">List contains 3 element</h2>
+		<h2 th:case="'*'">List Contain more element</h2>
+	</div>
+	</section>
+</body>
+</html>

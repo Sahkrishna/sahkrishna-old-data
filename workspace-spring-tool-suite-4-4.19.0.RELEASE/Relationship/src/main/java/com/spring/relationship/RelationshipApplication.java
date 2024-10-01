@@ -1,0 +1,24 @@
+package com.spring.relationship;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class RelationshipApplication {
+	
+	
+	
+	
+//	private Logger logger=LoggerFactory.getLogger(RelationshipApplication.class);
+
+	public static void main(String[] args) {
+		SpringApplication.run(RelationshipApplication.class, args);
+
+		
+	}
+
+
+		
+}
+
+

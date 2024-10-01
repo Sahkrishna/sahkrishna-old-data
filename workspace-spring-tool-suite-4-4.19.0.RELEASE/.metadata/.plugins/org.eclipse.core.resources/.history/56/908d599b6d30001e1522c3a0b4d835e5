@@ -1,0 +1,5 @@
+package com.codewithkrishna.blog.config;
+
+public class JwtAuthenticationFilter {
+
+}

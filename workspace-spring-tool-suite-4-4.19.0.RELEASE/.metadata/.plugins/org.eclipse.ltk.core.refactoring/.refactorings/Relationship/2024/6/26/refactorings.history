@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.spring.relationship.service.StudentService&apos; to &apos;StudentServiceImpl&apos;&#x0D;&#x0A;- Original project: &apos;Relationship&apos;&#x0D;&#x0A;- Original element: &apos;com.spring.relationship.service.StudentService&apos;&#x0D;&#x0A;- Renamed element: &apos;com.spring.relationship.service.StudentServiceImpl&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StudentService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.relationship.service{StudentService.java[StudentService" matchStrategy="1" name="StudentServiceImpl" qualified="false" references="true" similarDeclarations="false" stamp="1719139555347" textual="false" version="1.0"/>
+</session>
