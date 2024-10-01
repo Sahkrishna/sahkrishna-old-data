@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/demo/reactbootstrap/corporatewebsite/static/css/main.e621792f.css",
+    "main.js": "/demo/reactbootstrap/corporatewebsite/static/js/main.1c4e15c4.js",
+    "static/js/453.e243fcc3.chunk.js": "/demo/reactbootstrap/corporatewebsite/static/js/453.e243fcc3.chunk.js",
+    "static/media/img-hero2.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img-hero2.7a396087717d6aac698a.jpg",
+    "static/media/img5.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img5.005ef6648860b053814d.jpg",
+    "static/media/img-hero1.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img-hero1.25bc79d8d10f678124f4.jpg",
+    "static/media/img3.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img3.69dad03ac4f397774b6d.jpg",
+    "static/media/img6.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img6.9e08883b1c713f3beae0.jpg",
+    "static/media/bg-testimonial.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/bg-testimonial.b26cbabc972e95786cbf.jpg",
+    "static/media/img-hero3.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img-hero3.fc13d76750b1bf1ff1e5.jpg",
+    "static/media/img7.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img7.55be95b71959267f1c62.jpg",
+    "static/media/img2.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img2.40a9d29b9f470a11669e.jpg",
+    "static/media/img4.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img4.ba37c27ab5da9b7d7e66.jpg",
+    "static/media/blog3.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/blog3.bcca9fb438e228c66612.jpg",
+    "static/media/blog1.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/blog1.41fc52f527bd1b05cdcd.jpg",
+    "static/media/blog2.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/blog2.b31a167d23173c955d09.jpg",
+    "static/media/team5.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team5.849950bc338b0b322c6a.jpg",
+    "static/media/team1.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team1.5c62cdf454c12337aaa0.jpg",
+    "static/media/img1.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/img1.69259de9db0d2c31ef01.jpg",
+    "static/media/team3.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team3.5de03ca8026a02a7e51a.jpg",
+    "static/media/team4.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team4.1f145d6d7a77d3f7fa1d.jpg",
+    "static/media/team8.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team8.fa903df42616f722725a.jpg",
+    "static/media/team7.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team7.8abf58b17d3dccaddec4.jpg",
+    "static/media/team2.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team2.5d54ef0fad5f779cd88b.jpg",
+    "static/media/team6.jpg": "/demo/reactbootstrap/corporatewebsite/static/media/team6.51e55dc38b7ce790b9b8.jpg",
+    "index.html": "/demo/reactbootstrap/corporatewebsite/index.html",
+    "main.e621792f.css.map": "/demo/reactbootstrap/corporatewebsite/static/css/main.e621792f.css.map",
+    "main.1c4e15c4.js.map": "/demo/reactbootstrap/corporatewebsite/static/js/main.1c4e15c4.js.map",
+    "453.e243fcc3.chunk.js.map": "/demo/reactbootstrap/corporatewebsite/static/js/453.e243fcc3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e621792f.css",
+    "static/js/main.1c4e15c4.js"
+  ]
+}
