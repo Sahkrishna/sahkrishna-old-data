@@ -1,0 +1,16 @@
+<p>service works!</p>
+
+<input type="text" #box  name="username" id="">
+<button (click)="getValue(box.value)">click</button>
+<p>Box value is: {{displayVal}}</p>
+
+
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h1 style="color: blue;">Blue color</h1>
+</ng-template>
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">red color</h1>
+</ng-template>

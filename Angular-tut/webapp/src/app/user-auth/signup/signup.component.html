@@ -1,0 +1,15 @@
+<p>signup works!</p>
+<Button (click)="getData('krishna')">buttontwo</Button>
+<br>
+<br>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="Enter keyup">
+<br>
+<br>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Enter keydown">
+<br>
+<br>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="Enter keyblur">
+<br>
+<br>
+<input type="text" #box3 (mouseover)="getData(box3.value)" placeholder="Enter mouseover">
+
